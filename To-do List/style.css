@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rokkitt', serif;
+    background-image: conic-gradient(at 125% 50%, #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7);
+    color: white;
+}
+
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin: 25px 0px;
+    width: 100%;
+}
+
+.nav h2{
+    font-size: 2rem;
+}
+
+.user-input{
+    /* border: 1px solid black; */
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input{
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.user-input input:focus{
+    box-shadow: 0 0 5px  #ff7c94;
+    border: 1px solid  #ff7c94;
+}
+
+.user-input button{
+    cursor: pointer;
+    padding: 8px;
+    outline: none;
+    color: white;
+    width: fit-content;
+    transition: 1s;
+    background-color:black;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user-input button:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.to-doItems{
+    width: 500px;
+    margin: auto;
+
+}
+
+.item{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    padding: 16px;
+    color: rgba(0, 0, 0, 0.952);
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.item:hover{
+     box-shadow: 0 0 20px  #b78cf7;
+     border: 1px solid  #b78cf7;
+}
+
+.items i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+
+/* @media(max-width: 780px) */
